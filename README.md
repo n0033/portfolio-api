@@ -63,7 +63,7 @@ In your settings.py:
    MEDIA_DIR = ''
    ```
 
-after that, in your terminal:
+After that, in your terminal:
 * `python manage.py makemigrations`
 and then
 * `python manage.py migrate`
