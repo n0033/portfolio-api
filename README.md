@@ -51,16 +51,16 @@ In your settings.py:
    ]
   ```
  - specify static directories:  
-  ```
-  STATIC_URL = '/static/'
-  STATICFILES_DIRS = [
-      os.path.join(BASE_DIR, 'static'),
-  ]
-  STATIC_ROOT = os.path.join(BASE_DIR, 'static_files')
-  MEDIA_URL = '/media/'
-  MEDIA_ROOT = os.path.join(BASE_DIR, 'static/media')
-  MEDIA_DIR = ''
-  ```
+   ```
+   STATIC_URL = '/static/'
+   STATICFILES_DIRS = [
+       os.path.join(BASE_DIR, 'static'),
+   ]
+   STATIC_ROOT = os.path.join(BASE_DIR, 'static_files')
+   MEDIA_URL = '/media/'
+   MEDIA_ROOT = os.path.join(BASE_DIR, 'static/media')
+   MEDIA_DIR = ''
+   ```
 If you want to run it just on local server, you can skip adding `CORS_ORIGIN_WHITELIST` and set `CORS_ALLOW_ALL_ORIGINS` to `True`
 after that, in your terminal:
 * `python manage.py makemigrations`
