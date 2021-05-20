@@ -31,16 +31,16 @@ In your settings.py:
    ```
  - add `REST_FRAMEWORK` variable:
    ```python
-     REST_FRAMEWORK = {
-      'DEFAULT_PERMISSION_CLASSES': [
-          'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
-      ],
-      'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-      'PAGE_SIZE': 10,
-      'DEFAULT_AUTHENTICATION_CLASSES': [
-          'rest_framework.authentication.TokenAuthentication',
-      ]
-     }
+   REST_FRAMEWORK = {
+       'DEFAULT_PERMISSION_CLASSES': [
+           'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+       ],
+       'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+       'PAGE_SIZE': 10,
+       'DEFAULT_AUTHENTICATION_CLASSES': [
+           'rest_framework.authentication.TokenAuthentication',
+       ]
+   }
    ```
   
 - specify urls for `corsheaders`: 
@@ -49,7 +49,7 @@ In your settings.py:
      "https://yoururl1.com",
      "https://www.yoururl1.com",
    ]
- ```
+  ```
 If you want to run it just on local server, you can skip adding `CORS_ORIGIN_WHITELIST` and set `CORS_ALLOW_ALL_ORIGINS` to `True`
 after that, in your terminal:
    `python manage.py makemigrations`
