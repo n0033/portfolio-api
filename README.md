@@ -52,11 +52,11 @@ In your settings.py:
   ```
 If you want to run it just on local server, you can skip adding `CORS_ORIGIN_WHITELIST` and set `CORS_ALLOW_ALL_ORIGINS` to `True`
 after that, in your terminal:
-   `python manage.py makemigrations`
-   and then
-   `python manage.py migrate`
-   finally
-   `python manage.py runserver`
+* `python manage.py makemigrations`
+and then
+* `python manage.py migrate`
+finally
+* `python manage.py runserver`
 
 
 
