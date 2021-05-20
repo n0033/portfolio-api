@@ -9,9 +9,9 @@ Then, fork the project from repository and paste all files in your new project's
 *While in project's root directory, run
 `pip install -r requirements.txt` This will install all unnecessary packages.
 
-*In your settings.py
+In your settings.py:
  - add `rest_framework`, `rest_framework.authtoken`, `base`, `corsheaders`, `django_cleanup.apps.CleanupConfig` app to `INSTALLED_APPS`:
-   ```
+   ```python
    INSTALLED_APPS = [
     ...
     'rest_framework',
@@ -22,14 +22,14 @@ Then, fork the project from repository and paste all files in your new project's
    ]
    ```
  - add `corsheaders.middleware.CorsMiddleware` as first element of `MIDDLEWARE`:
-   ```
+   ```python
    MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     ...
    ]
    ```
  - add `REST_FRAMEWORK` variable:
-   ```
+   ```python
    REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
@@ -42,14 +42,14 @@ Then, fork the project from repository and paste all files in your new project's
   }
   ```
 - specify urls for `corsheaders`: 
-  ```
+  ```python
   CORS_ORIGIN_WHITELIST = [
     "https://yoururl1.com",
     "https://www.yoururl1.com",
 ]
  ```
   if you want to run it just on local server you can skip adding `CORS_ORIGIN_WHITELIST` and set `CORS_ALLOW_ALL_ORIGINS` to `True`
-* after that, in your terminal:
+after that, in your terminal:
    `python manage.py makemigrations`
    and then
    `python manage.py migrate`
