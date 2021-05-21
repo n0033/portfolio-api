@@ -1,7 +1,7 @@
 # portfolioAPI
 
-The following project is an web API which serves data such as informations about projects, bio etc. to the frontend.
-It was written in Django REST Framework.
+The following project is a web API which serves data such as informations about projects, bio etc. to the frontend.
+It is written in Django REST Framework.
 
 # installation & configuration
 In order to get the api working locally, you need to create new django project.
