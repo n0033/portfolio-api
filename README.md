@@ -6,7 +6,7 @@ It is written in Django REST Framework.
 # installation & configuration
 In order to get the api working locally, you need to create new django project.
 Then, fork the project from repository and paste all files in your new project's directory.
-*While in project's root directory, run
+* While in project's root directory, run
 `pip install -r requirements.txt`
 This will install all unnecessary packages.
 
